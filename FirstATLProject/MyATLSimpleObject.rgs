@@ -1,0 +1,26 @@
+HKCR
+{
+	FirstATLProject.MyATLSimpleObject.1 = s 'MyATLSimpleObject class'
+	{
+		CLSID = s '{be1ba07e-4136-4e2a-a5d9-2ec8f59ba219}'
+	}
+	FirstATLProject.MyATLSimpleObject = s 'MyATLSimpleObject class'
+	{		
+		CurVer = s 'FirstATLProject.MyATLSimpleObject.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {be1ba07e-4136-4e2a-a5d9-2ec8f59ba219} = s 'MyATLSimpleObject class'
+		{
+			ProgID = s 'FirstATLProject.MyATLSimpleObject.1'
+			VersionIndependentProgID = s 'FirstATLProject.MyATLSimpleObject'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{caa2f330-7ef9-490f-ad15-615e284cc17d}'
+			Version = s '1.0'
+		}
+	}
+}

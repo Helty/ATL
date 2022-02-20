@@ -1,0 +1,18 @@
+﻿// FirstATLProject.idl: источник языка IDL для FirstATLProject
+//
+
+// Этот файл будет обработан средством MIDL для
+// создание библиотеки типов ($handlersafeidlname$.tlb) и кода маршалирования.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(caa2f330-7ef9-490f-ad15-615e284cc17d),
+	version(1.0),
+]
+library FirstATLProjectLib
+{
+	importlib("stdole2.tlb");
+};
+
