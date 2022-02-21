@@ -1,10 +1,10 @@
-﻿// FirstATLProject.cpp: реализация экспортов DLL.
+﻿// ATLServerLib.cpp: реализация экспортов DLL.
 
 
 #include "pch.h"
 #include "framework.h"
 #include "resource.h"
-#include "FirstATLProject_i.h"
+#include "ATLServerLib_i.h"
 #include "dllmain.h"
 
 

@@ -14,7 +14,7 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Созданные файлы">
-      <UniqueIdentifier>{6b1995a6-4d45-4198-bb9b-ba2accc438b6}</UniqueIdentifier>
+      <UniqueIdentifier>{1026de29-a9f9-4b68-810f-bbe8844b86d7}</UniqueIdentifier>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
   </ItemGroup>
@@ -31,54 +31,42 @@
     <ClInclude Include="dllmain.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="FirstATLProject_i.h">
+    <ClInclude Include="ATLServerLib_i.h">
       <Filter>Созданные файлы</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="_IMyATLSimpleObjectEvents_CP.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="MyATLSimpleObject.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FirstATLProject.cpp">
+    <ClCompile Include="ATLServerLib.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="FirstATLProject_i.c">
+    <ClCompile Include="ATLServerLib_i.c">
       <Filter>Созданные файлы</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="MyATLSimpleObject.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="FirstATLProject.rc">
+    <ResourceCompile Include="ATLServerLib.rc">
       <Filter>Файлы ресурсов</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="FirstATLProject.rgs">
+    <None Include="ATLServerLib.rgs">
       <Filter>Файлы ресурсов</Filter>
     </None>
-    <None Include="FirstATLProject.def">
+    <None Include="ATLServerLib.def">
       <Filter>Исходные файлы</Filter>
-    </None>
-    <None Include="MyATLSimpleObject.rgs">
-      <Filter>Файлы ресурсов</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="FirstATLProject.idl">
+    <Midl Include="ATLServerLib.idl">
       <Filter>Исходные файлы</Filter>
     </Midl>
   </ItemGroup>

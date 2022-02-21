@@ -1,4 +1,4 @@
-﻿; FirstATLProject.def: объявляет параметры модуля.
+﻿; ATLServerLib.def: объявляет параметры модуля.
 
 LIBRARY
 

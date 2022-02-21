@@ -3,10 +3,10 @@
 #include "pch.h"
 #include "framework.h"
 #include "resource.h"
-#include "FirstATLProject_i.h"
+#include "ATLServerLib_i.h"
 #include "dllmain.h"
 
-CFirstATLProjectModule _AtlModule;
+CATLServerLibModule _AtlModule;
 
 // Точка входа DLL
 extern "C" BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)

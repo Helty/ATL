@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{FC79B395-2341-42D6-B4D8-1C4815932CD3}</ProjectGuid>
+    <ProjectGuid>{13D909E6-4B65-458F-BD4E-6CEFF5E2E610}</ProjectGuid>
     <Keyword>AtlProj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -95,11 +95,11 @@
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <HeaderFileName>FirstATLProject_i.h</HeaderFileName>
-      <InterfaceIdentifierFileName>FirstATLProject_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>FirstATLProject_p.c</ProxyFileName>
+      <HeaderFileName>ATLServerLib_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>ATLServerLib_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>ATLServerLib_p.c</ProxyFileName>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)FirstATLProject.tlb</TypeLibraryName>
+      <TypeLibraryName>$(IntDir)ATLServerLib.tlb</TypeLibraryName>
       <DllDataFileName />
       <ValidateAllParameters>true</ValidateAllParameters>
     </Midl>
@@ -110,7 +110,7 @@
     </ResourceCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <ModuleDefinitionFile>.\FirstATLProject.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\ATLServerLib.def</ModuleDefinitionFile>
       <RegisterOutput>true</RegisterOutput>
     </Link>
   </ItemDefinitionGroup>
@@ -127,11 +127,11 @@
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <HeaderFileName>FirstATLProject_i.h</HeaderFileName>
-      <InterfaceIdentifierFileName>FirstATLProject_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>FirstATLProject_p.c</ProxyFileName>
+      <HeaderFileName>ATLServerLib_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>ATLServerLib_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>ATLServerLib_p.c</ProxyFileName>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)FirstATLProject.tlb</TypeLibraryName>
+      <TypeLibraryName>$(IntDir)ATLServerLib.tlb</TypeLibraryName>
       <DllDataFileName />
       <ValidateAllParameters>true</ValidateAllParameters>
     </Midl>
@@ -142,7 +142,7 @@
     </ResourceCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <ModuleDefinitionFile>.\FirstATLProject.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\ATLServerLib.def</ModuleDefinitionFile>
       <RegisterOutput>true</RegisterOutput>
     </Link>
   </ItemDefinitionGroup>
@@ -159,11 +159,11 @@
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <HeaderFileName>FirstATLProject_i.h</HeaderFileName>
-      <InterfaceIdentifierFileName>FirstATLProject_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>FirstATLProject_p.c</ProxyFileName>
+      <HeaderFileName>ATLServerLib_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>ATLServerLib_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>ATLServerLib_p.c</ProxyFileName>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)FirstATLProject.tlb</TypeLibraryName>
+      <TypeLibraryName>$(IntDir)ATLServerLib.tlb</TypeLibraryName>
       <DllDataFileName />
       <ValidateAllParameters>true</ValidateAllParameters>
     </Midl>
@@ -174,7 +174,7 @@
     </ResourceCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <ModuleDefinitionFile>.\FirstATLProject.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\ATLServerLib.def</ModuleDefinitionFile>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <RegisterOutput>true</RegisterOutput>
@@ -192,11 +192,11 @@
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <HeaderFileName>FirstATLProject_i.h</HeaderFileName>
-      <InterfaceIdentifierFileName>FirstATLProject_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>FirstATLProject_p.c</ProxyFileName>
+      <HeaderFileName>ATLServerLib_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>ATLServerLib_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>ATLServerLib_p.c</ProxyFileName>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)FirstATLProject.tlb</TypeLibraryName>
+      <TypeLibraryName>$(IntDir)ATLServerLib.tlb</TypeLibraryName>
       <DllDataFileName />
       <ValidateAllParameters>true</ValidateAllParameters>
     </Midl>
@@ -207,23 +207,36 @@
     </ResourceCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <ModuleDefinitionFile>.\FirstATLProject.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\ATLServerLib.def</ModuleDefinitionFile>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <RegisterOutput>true</RegisterOutput>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ATLServerLib_i.h" />
     <ClInclude Include="dllmain.h" />
-    <ClInclude Include="FirstATLProject_i.h" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="MyATLSimpleObject.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="_IMyATLSimpleObjectEvents_CP.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ATLServerLib.cpp" />
+    <ClCompile Include="ATLServerLib_i.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
@@ -238,22 +251,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="FirstATLProject.cpp" />
-    <ClCompile Include="FirstATLProject_i.c">
-      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
-      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
-      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
-      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      </PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      </PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="MyATLSimpleObject.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -262,15 +259,14 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="FirstATLProject.rc" />
+    <ResourceCompile Include="ATLServerLib.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="FirstATLProject.def" />
-    <None Include="FirstATLProject.rgs" />
-    <None Include="MyATLSimpleObject.rgs" />
+    <None Include="ATLServerLib.def" />
+    <None Include="ATLServerLib.rgs" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="FirstATLProject.idl" />
+    <Midl Include="ATLServerLib.idl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

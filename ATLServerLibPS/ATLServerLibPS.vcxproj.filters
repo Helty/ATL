@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Созданные файлы">
-      <UniqueIdentifier>{621fa6bd-b17d-44a8-94d8-9ce32e3c9253}</UniqueIdentifier>
+      <UniqueIdentifier>{576859fa-ffc1-4953-829c-45d99f676f49}</UniqueIdentifier>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Исходные файлы">
@@ -19,18 +19,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\FirstATLProject\FirstATLProjectps.def">
+    <None Include="..\ATLServerLib\ATLServerLibps.def">
       <Filter>Исходные файлы</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\FirstATLProject\FirstATLProject_i.c">
+    <ClCompile Include="..\ATLServerLib\ATLServerLib_i.c">
       <Filter>Созданные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\FirstATLProject\FirstATLProject_p.c">
+    <ClCompile Include="..\ATLServerLib\ATLServerLib_p.c">
       <Filter>Созданные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\FirstATLProject\dlldata.c">
+    <ClCompile Include="..\ATLServerLib\dlldata.c">
       <Filter>Созданные файлы</Filter>
     </ClCompile>
   </ItemGroup>

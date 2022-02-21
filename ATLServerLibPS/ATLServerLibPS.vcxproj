@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{F2A2066F-27B8-46DF-AAED-81F4C1E17DA0}</ProjectGuid>
+    <ProjectGuid>{3F2A4C88-6BD0-45E1-8E6D-363D51391259}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <Keyword>AtlPSProj</Keyword>
   </PropertyGroup>
@@ -85,7 +85,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>kernel32.lib;rpcns4.lib;rpcrt4.lib;oleaut32.lib;uuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>FirstATLProjectPS.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>ATLServerLibPS.def</ModuleDefinitionFile>
       <RegisterOutput>true</RegisterOutput>
     </Link>
     <PreBuildEvent>
@@ -103,7 +103,7 @@ Exit 1
     </ClCompile>
     <Link>
       <AdditionalDependencies>kernel32.lib;rpcns4.lib;rpcrt4.lib;oleaut32.lib;uuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>FirstATLProjectPS.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>ATLServerLibPS.def</ModuleDefinitionFile>
       <RegisterOutput>true</RegisterOutput>
     </Link>
     <PreBuildEvent>
@@ -122,7 +122,7 @@ Exit 1
     </ClCompile>
     <Link>
       <AdditionalDependencies>kernel32.lib;rpcns4.lib;rpcrt4.lib;oleaut32.lib;uuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>FirstATLProjectPS.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>ATLServerLibPS.def</ModuleDefinitionFile>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <RegisterOutput>true</RegisterOutput>
@@ -143,7 +143,7 @@ Exit 1
     </ClCompile>
     <Link>
       <AdditionalDependencies>kernel32.lib;rpcns4.lib;rpcrt4.lib;oleaut32.lib;uuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>FirstATLProjectPS.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>ATLServerLibPS.def</ModuleDefinitionFile>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <RegisterOutput>true</RegisterOutput>
@@ -158,10 +158,10 @@ Exit 1
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="..\FirstATLProject\FirstATLProjectps.def" />
+    <None Include="..\ATLServerLib\ATLServerLibps.def" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\FirstATLProject\dlldata.c">
+    <ClCompile Include="..\ATLServerLib\ATLServerLib_i.c">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
@@ -175,7 +175,7 @@ Exit 1
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\FirstATLProject\FirstATLProject_i.c">
+    <ClCompile Include="..\ATLServerLib\ATLServerLib_p.c">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
@@ -189,7 +189,7 @@ Exit 1
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\FirstATLProject\FirstATLProject_p.c">
+    <ClCompile Include="..\ATLServerLib\dlldata.c">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>

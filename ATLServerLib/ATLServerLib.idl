@@ -1,4 +1,4 @@
-﻿// FirstATLProject.idl: источник языка IDL для FirstATLProject
+﻿// ATLServerLib.idl: источник языка IDL для ATLServerLib
 //
 
 // Этот файл будет обработан средством MIDL для
@@ -8,10 +8,10 @@ import "oaidl.idl";
 import "ocidl.idl";
 
 [
-	uuid(caa2f330-7ef9-490f-ad15-615e284cc17d),
+	uuid(adcf96fe-86aa-4f7b-a7a5-95506e6a5628),
 	version(1.0),
 ]
-library FirstATLProjectLib
+library ATLServerLibLib
 {
 	importlib("stdole2.tlb");
 };
