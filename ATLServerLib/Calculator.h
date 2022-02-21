@@ -53,6 +53,14 @@ public:
 
 
 
+	STDMETHOD(Add)(DOUBLE value);
+	STDMETHOD(Substruct)(DOUBLE value);
+	STDMETHOD(Multiply)(DOUBLE value);
+	STDMETHOD(Divide)(DOUBLE value);
+	STDMETHOD(Sqrt)();
+	STDMETHOD(get_Result)(DOUBLE* pVal);
+	STDMETHOD(get_HasError)(BOOL* pVal);
+	STDMETHOD(put_HasError)(BOOL newVal);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(Calculator), CCalculator)

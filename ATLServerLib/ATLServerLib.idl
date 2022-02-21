@@ -16,6 +16,14 @@ import "ocidl.idl";
 ]
 interface ICalculator : IDispatch
 {
+	[id(1), helpstring("Add value to result")] HRESULT Add([in] DOUBLE value);
+	[id(2), helpstring("Substruct value from result")] HRESULT Substruct([in] DOUBLE value);
+	[id(3), helpstring("Multiply result by value")] HRESULT Multiply([in] DOUBLE value);
+	[id(4), helpstring("Divide result on value")] HRESULT Divide([in] DOUBLE value);
+	[id(5), helpstring("Takes sqrt of result")] HRESULT Sqrt();
+	[propget, id(7), helpstring("Property that holds the result")] HRESULT Result([out, retval] DOUBLE* pVal);
+	[propget, id(8), helpstring("Return true, if an error occurs")] HRESULT HasError([out, retval] BOOL* pVal);
+	[propput, id(8), helpstring("Return true, if an error occurs")] HRESULT HasError([in] BOOL newVal);
 };
 [
 	uuid(adcf96fe-86aa-4f7b-a7a5-95506e6a5628),
