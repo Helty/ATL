@@ -8,11 +8,29 @@ import "oaidl.idl";
 import "ocidl.idl";
 
 [
+	object,
+	uuid(d8e7fc92-beed-42c8-bc58-df7791e47291),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ICalculator : IDispatch
+{
+};
+[
 	uuid(adcf96fe-86aa-4f7b-a7a5-95506e6a5628),
 	version(1.0),
 ]
 library ATLServerLibLib
 {
 	importlib("stdole2.tlb");
+	[
+		uuid(0116f4b1-6411-49a1-9600-cc1c1402aabc)
+	]
+	coclass Calculator
+	{
+		[default] interface ICalculator;
+	};
 };
 
+import "shobjidl.idl";

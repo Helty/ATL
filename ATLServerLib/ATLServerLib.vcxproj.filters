@@ -37,6 +37,9 @@
     <ClInclude Include="pch.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Calculator.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ATLServerLib.cpp">
@@ -51,6 +54,9 @@
     <ClCompile Include="pch.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Calculator.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ATLServerLib.rc">
@@ -63,6 +69,9 @@
     </None>
     <None Include="ATLServerLib.def">
       <Filter>Исходные файлы</Filter>
+    </None>
+    <None Include="Calculator.rgs">
+      <Filter>Файлы ресурсов</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

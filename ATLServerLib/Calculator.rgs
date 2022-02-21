@@ -1,0 +1,26 @@
+HKCR
+{
+	ATLServerLib.Calculator.1 = s 'Calculator class'
+	{
+		CLSID = s '{0116f4b1-6411-49a1-9600-cc1c1402aabc}'
+	}
+	ATLServerLib.Calculator = s 'Calculator class'
+	{		
+		CurVer = s 'ATLServerLib.Calculator.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0116f4b1-6411-49a1-9600-cc1c1402aabc} = s 'Calculator class'
+		{
+			ProgID = s 'ATLServerLib.Calculator.1'
+			VersionIndependentProgID = s 'ATLServerLib.Calculator'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{adcf96fe-86aa-4f7b-a7a5-95506e6a5628}'
+			Version = s '1.0'
+		}
+	}
+}
